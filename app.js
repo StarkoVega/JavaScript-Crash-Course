@@ -1,8 +1,4 @@
+let celsius = 10
+let fahrenheit = celsius * 1.8 + 32
 
-
-
-
-
-
-
-let fullName = 'Jose Vega'
+console.log(fahrenheit)
