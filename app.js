@@ -4,14 +4,9 @@
 //
 //
 //
-let cash = 30
-let price = 40
-let difference = cash - price
+let cash = 60;
+let price = 40;
+let isStoreOpen = true;
 
-if (cash > price) {
-    console.log(`you paid extra - the change is $${difference}`)
-} else if (cash === price) {
-    console.log("you paid the exact amount, have a nice day!")
-} else {
-    console.log(`you are $${-difference} short`)
-}
+let str = isStoreOpen && cash >= price ? "give receipt" : "don't give receipt";
+console.log(str);
