@@ -4,9 +4,9 @@
 //
 //
 //
-let cash = 60;
-let price = 40;
-let isStoreOpen = true;
+let count = 1
 
-let str = isStoreOpen && cash >= price ? "give receipt" : "don't give receipt";
-console.log(str);
+while (count <= 100) {
+    console.log(count)
+    count = count + 1
+}
