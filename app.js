@@ -4,8 +4,10 @@
 //
 //
 //
-let str = "Frontend Simplified"
-
-for (let i = 0; i < str.length; i++) {
-  console.log(str[i])
+function welcome(name) {
+  console.log(`Welcome to Frontend Simplified, ${name}`)
 }
+
+welcome("David")
+welcome("Zen")
+welcome("Mitri")
