@@ -4,10 +4,9 @@
 //
 //
 //
-function welcome(name) {
-  console.log(`Welcome to Frontend Simplified, ${name}`)
+function fn() {
+  return 5
+  console.log('my function')
 }
 
-welcome("David")
-welcome("Zen")
-welcome("Mitri")
+console.log(fn())
