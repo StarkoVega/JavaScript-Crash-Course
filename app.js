@@ -6,6 +6,12 @@
 //
 let grades = ["A+", "A", "FAIL"];
 
-let passingGrades = grades.filter((grade) => grade !== "FAIL");
+let goodGrades = []
 
-console.log(passingGrades);
+for (let i = 0; i < grades.length; i++) {
+  if (grades[i] !== 'FAIL') {
+    goodGrades.push(grades[i])
+  }
+}
+
+console.log(goodGrades)
