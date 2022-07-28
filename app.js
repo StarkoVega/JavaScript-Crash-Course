@@ -4,8 +4,8 @@
 //
 //
 //
-let arr = [20, 30, 40, 50, 100]
+let grades = ["A+", "A", "FAIL"];
 
-let newArr = arr.filter(element => element < 50)
+let passingGrades = grades.filter((grade) => grade !== "FAIL");
 
-console.log(newArr)
+console.log(passingGrades);
