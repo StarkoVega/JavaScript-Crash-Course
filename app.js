@@ -46,18 +46,17 @@ function login(email, password) {
   console.log("could not find an email that matches");
 }
 
-function register(username, email, password, subscriptionStatus, discordId) {
-  let user = {
-    username,
-    email,
-    password,
-    subscriptionStatus,
-    discordId,
-    lessonsCompleted: []
-  }
-  users.push(user)
+function register(user) {
+  users.push(user);
 }
 
-register('Sergio', 'sergio@gmail.com', 'sergio123', 'VIP', 'Sergio#0001')
+register({
+  username: "Sergio",
+  email: "sergio@gmail.com",
+  password: "sergio123",
+  subscriptionStatus: "VIP",
+  discordId: "Sergio#0001",
+  lessonsCompleted: [0, 1],
+});
 
-login('sergio@gmail.com', 'sergio123')
+login("sergio@gmail.com", "sergio123");
