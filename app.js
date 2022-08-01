@@ -40,8 +40,24 @@ function login(email, password) {
       } else {
         console.log("password is incorrect");
       }
+      return;
     }
   }
+  console.log("could not find an email that matches");
 }
 
-login("jose.vega@gmail.com", "test123");
+function register(username, email, password, subscriptionStatus, discordId) {
+  let user = {
+    username,
+    email,
+    password,
+    subscriptionStatus,
+    discordId,
+    lessonsCompleted: []
+  }
+  users.push(user)
+}
+
+register('Sergio', 'sergio@gmail.com', 'sergio123', 'VIP', 'Sergio#0001')
+
+login('sergio@gmail.com', 'sergio123')
